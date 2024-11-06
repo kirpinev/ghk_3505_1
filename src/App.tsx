@@ -194,7 +194,7 @@ export const App = () => {
             Начать оформление
           </ButtonMobile>
         ) : (
-          <ButtonMobile loading={loading} block view="primary" href="">
+          <ButtonMobile block view="primary" href="">
             Начать оформление
           </ButtonMobile>
         )}
