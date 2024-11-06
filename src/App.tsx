@@ -164,11 +164,11 @@ export const App = () => {
             <Typography.Text tag="p" view="primary-medium" weight="bold">
               Как это работает
             </Typography.Text>
-            <Typography.Text tag="p" view="primary-small" color="secondary">
+            <Typography.Text tag="p" view="primary-small">
               Настройте автоперевод один раз — деньги будут приходить из другого
               банка на ваш счёт по расписанию.
             </Typography.Text>
-            <Typography.Text tag="p" view="primary-small" color="secondary">
+            <Typography.Text tag="p" view="primary-small">
               Бесплатно и безопасно.
             </Typography.Text>
           </>
@@ -177,11 +177,11 @@ export const App = () => {
             <Typography.Text tag="p" view="primary-medium" weight="bold">
               Как это работает
             </Typography.Text>
-            <Typography.Text tag="p" view="primary-small" color="secondary">
+            <Typography.Text tag="p" view="primary-small">
               Заполните заявление о переводе пенсии в Альфа-Банк, мы отправим
               его в СФР через Госуслуги.
             </Typography.Text>
-            <Typography.Text tag="p" view="primary-small" color="secondary">
+            <Typography.Text tag="p" view="primary-small">
               Без походов в банк или СФР. Бесплатно и безопасно.
             </Typography.Text>
           </>
