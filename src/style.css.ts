@@ -90,6 +90,7 @@ const benefits = style({
 
 const benefit = style({
   flexBasis: "47%",
+  minHeight: "166px",
   backgroundColor: "#F2F3F5",
   borderRadius: "1rem",
   boxSizing: "border-box",

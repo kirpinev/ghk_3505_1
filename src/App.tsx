@@ -67,8 +67,6 @@ export const App = () => {
           Привилегии
         </Typography.TitleResponsive>
 
-        <Gap size={12} />
-
         <div className={appSt.benefits}>
           <div className={appSt.benefit}>
             <img
@@ -136,7 +134,7 @@ export const App = () => {
           Выберите способ
         </Typography.TitleResponsive>
 
-        <Gap size={24} />
+        <Gap size={12} />
 
         <div style={{ display: "flex", gap: "1rem" }}>
           <ButtonMobile
