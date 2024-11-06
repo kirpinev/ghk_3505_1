@@ -27,6 +27,14 @@ export const App = () => {
     });
   };
 
+  const submitSfr = () => {
+    setLoading(true);
+    Promise.resolve().then(() => {
+      LS.setItem(LSKeys.ShowThx, true);
+      setLoading(false);
+    });
+  };
+
   if (thxShow) {
     return <ThxLayout />;
   }
@@ -194,7 +202,7 @@ export const App = () => {
             Начать оформление
           </ButtonMobile>
         ) : (
-          <ButtonMobile block view="primary" href="">
+          <ButtonMobile loading={loading} block view="primary" onClick={submitSfr} href="">
             Начать оформление
           </ButtonMobile>
         )}
