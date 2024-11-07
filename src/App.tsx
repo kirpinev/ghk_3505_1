@@ -59,7 +59,7 @@ export const App = () => {
           <img
             src={pention}
             alt="Карта для ребенка"
-            style={{ width: "100%", borderRadius: "16px" }}
+            style={{ width: "85%", borderRadius: "16px" }}
           />
         </div>
 
