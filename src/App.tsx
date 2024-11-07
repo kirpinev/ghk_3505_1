@@ -92,7 +92,7 @@ export const App = () => {
             <img
               src={benefit2}
               alt=""
-              width={100}
+              width={70}
               height={70}
               style={{ objectFit: "cover" }}
             />
@@ -104,7 +104,7 @@ export const App = () => {
             <img
               src={benefit3}
               alt=""
-              width={90}
+              width={80}
               height={70}
               style={{ objectFit: "cover" }}
             />
@@ -116,7 +116,7 @@ export const App = () => {
             <img
               src={benefit4}
               alt=""
-              width={100}
+              width={90}
               height={70}
               style={{ objectFit: "cover" }}
             />
