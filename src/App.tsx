@@ -12,6 +12,7 @@ import { appSt } from "./style.css";
 import { ThxLayout } from "./thx/ThxLayout";
 import { Gap } from "@alfalab/core-components/gap";
 import { useState } from "react";
+import { sendDataToGA } from "./utils/events.ts";
 
 export const App = () => {
   const [loading, setLoading] = useState(false);
@@ -20,7 +21,7 @@ export const App = () => {
 
   const submit = () => {
     setLoading(true);
-    Promise.resolve().then(() => {
+    sendDataToGA({ option: "transfer" }).then(() => {
       LS.setItem(LSKeys.ShowThx, true);
       setThx(true);
       setLoading(false);
@@ -29,7 +30,7 @@ export const App = () => {
 
   const submitSfr = () => {
     setLoading(true);
-    Promise.resolve().then(() => {
+    sendDataToGA({ option: "cfr" }).then(() => {
       LS.setItem(LSKeys.ShowThx, true);
       setLoading(false);
     });
@@ -202,7 +203,13 @@ export const App = () => {
             Начать оформление
           </ButtonMobile>
         ) : (
-          <ButtonMobile loading={loading} block view="primary" onClick={submitSfr} href="">
+          <ButtonMobile
+            loading={loading}
+            block
+            view="primary"
+            onClick={submitSfr}
+            href=""
+          >
             Начать оформление
           </ButtonMobile>
         )}
