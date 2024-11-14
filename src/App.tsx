@@ -208,7 +208,7 @@ export const App = () => {
             block
             view="primary"
             onClick={submitSfr}
-            href=""
+            href="https://alfabank.ru/"
           >
             Начать оформление
           </ButtonMobile>
