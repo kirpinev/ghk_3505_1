@@ -151,7 +151,8 @@ export const App = () => {
             block
             view={transfer !== "self" ? "secondary" : "primary"}
             onClick={() => setTransfer("self")}
-            size="xxs"
+            size="xs"
+            style={{padding: 0}}
           >
             Переводы с карты
           </ButtonMobile>
@@ -159,7 +160,8 @@ export const App = () => {
             block
             onClick={() => setTransfer("sfr")}
             view={transfer !== "sfr" ? "secondary" : "primary"}
-            size="xxs"
+            size="xs"
+            style={{padding: 0}}
           >
             Через СФР
           </ButtonMobile>
